@@ -1,0 +1,14 @@
+{
+  "compatibilityLevel": "JAVA_8",
+  "minVersion": "0.7",
+  "package": "dev.microcontrollers.quickconfig.mixin",
+  "refmap": "mixins.quickconfig.refmap.json",
+  "injectors": {
+    "maxShiftBy": 5
+  },
+  "client": [
+    "GuiMainMenuMixin",
+    "FMLClientHandlerMixin"
+  ],
+  "verbose": true
+}

@@ -6,7 +6,6 @@ import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
 // Adds support for kotlin, and adds the Polyfrost Gradle Toolkit
 // which we use to prepare the environment.
 plugins {
-    kotlin("jvm")
     id("org.polyfrost.multi-version")
     id("org.polyfrost.defaults.repo")
     id("org.polyfrost.defaults.java")
@@ -28,7 +27,7 @@ preprocess {
     vars.put("MODERN", if (project.platform.mcMinor >= 16) 1 else 0)
 }
 
-// Replaces the variables in `ExampleMod.java` to the ones specified in `gradle.properties`.
+// Replaces the variables in `QuickConfig.java` to the ones specified in `gradle.properties`.
 blossom {
     replaceToken("@VER@", mod_version)
     replaceToken("@NAME@", mod_name)
